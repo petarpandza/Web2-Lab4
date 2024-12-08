@@ -1,0 +1,453 @@
+.main .page-header {
+    margin-top: 0;
+}
+
+/*
+ * /Sidebar
+ */
+
+.CodeMirror {
+    height: auto;
+    font-family: IosevkaSlabWEB, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    /*IosevkaSlabWEB*/
+}
+
+.ra {
+    text-align: right;
+}
+
+/*
+ * Markdown styled CSS, taken from view-source:https://jbt.github.io/markdown-editor/, TODO: minimize
+ */
+
+.CodeMirror pre {
+    line-height: 16px;
+    font-variant-ligatures: none !important;
+}
+
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0b0080;
+}
+
+a:hover {
+    color: #06e;
+}
+
+a:active {
+    color: #faa700;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+pre,
+code {
+    color: #000;
+    font-family: IosevkaSlabWEB, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    font-size: 0.94em;
+    /* 0.94 = 0.88 + (1.00 - 0.88) / 2 */
+    border-radius: 3px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 5px;
+}
+
+pre code {
+    border: 0px !important;
+    background: transparent !important;
+    line-height: 1.3em;
+}
+
+.toggle-off.btn {
+    padding-left: 24px;
+    border: 1px solid red;
+    background: orange;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+/*
+  Analytics styles
+*/
+
+div.tooltip-sm {
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: black;
+    border: 0px;
+    border-radius: 5px;
+    pointer-events: none;
+    font-size: 11px;
+}
+
+div.tooltip-md {
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 45px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: black;
+    border: 0px;
+    border-radius: 5px;
+    pointer-events: none;
+    font-size: 11px;
+}
+
+div.tooltip-lg {
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 115px;
+    height: 65px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: black;
+    border: 0px;
+    border-radius: 5px;
+    pointer-events: none;
+    font-size: 11px;
+}
+
+div.tooltip-xlg {
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 75px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: black;
+    border: 0px;
+    border-radius: 5px;
+    pointer-events: none;
+    font-size: 11px;
+}
+
+.test-title {
+    font-size: 20px;
+    text-align: center;
+}
+
+.even-margins-sm {
+    margin: 15px 15px 15px 15px;
+}
+
+.even-margins-md {
+    margin: 25px 25px 25px 25px;
+}
+
+.border-primary {
+    border: 1px solid;
+    border-color: #428bca;
+}
+
+.blue-line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+}
+
+.red-line {
+    fill: none;
+    stroke: red;
+    stroke-width: 2px;
+}
+
+.green-line {
+    fill: none;
+    stroke: green;
+    stroke-width: 2px;
+}
+
+.blue-area {
+    fill: lightsteelblue;
+}
+
+.red-area {
+    fill: lightsalmon;
+}
+
+.green-area {
+    fill: springgreen;
+}
+
+.clip-path {
+    clip-path: url(#clip);
+}
+
+.zoom {
+    cursor: move;
+    fill: none;
+    pointer-events: all;
+}
+
+.box {
+    font: 10px sans-serif;
+}
+
+.box line,
+.box rect,
+.box circle {
+    fill: lightsteelblue;
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+.box .center {
+    stroke-dasharray: 3, 3;
+}
+
+.box .outlier {
+    fill: #ccc;
+    stroke: black;
+}
+
+option.red {
+    background-color: #cc0000;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+}
+
+/* md styles: */
+
+blockquote {
+    color: #666666;
+    margin: 0;
+    padding-left: 3em;
+    border-left: 0.5em #eee solid;
+}
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #eee;
+    margin: 1em 0;
+    padding: 0;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/*ul, ol { margin: 1em 0; padding: 0 0 0 2em; }*/
+
+li p:last-child {
+    margin: 0;
+}
+
+dd {
+    margin: 0 0 0 2em;
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th {
+    vertical-align: top;
+    padding: 4px 10px;
+    border: 1px solid black;
+    background-color: #9de5fb33;
+}
+
+td {
+    vertical-align: top;
+    padding: 4px 10px;
+    border: 1px solid #bbb;
+}
+
+/* tr:nth-child(even) td,
+tr:nth-child(even) th {
+  background: #eee;
+} */
+
+table.edgar th {
+    vertical-align: top;
+    padding: 4px 10px;
+    border: 1px solid #bbb;
+    background-color: aliceblue;
+}
+
+.edgar-code {
+    color: #000;
+    font-family: IosevkaSlabWEB, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    /*IosevkaSlabWEB*/
+    font-size: 0.94em;
+    /* 0.94 = 0.88 + (1.00 - 0.88) / 2 */
+}
+
+/*CodeMirror buttons overlap:*/
+
+.edgar-right-overlap {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    min-height: 100%;
+    padding: 5px;
+    z-index: 10;
+}
+
+.edgar-ticket-button {
+    float: right;
+    height: 100%;
+    min-height: 100%;
+    padding: 5px;
+    z-index: 10;
+    opacity: 0.8;
+}
+
+.edgar-comment-overlap {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    min-height: 100%;
+    padding: 5px;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    opacity: 0.8;
+}
+
+.edgar-right-overlap2 {
+    position: absolute;
+    right: 0px;
+    top: 45px;
+    height: 100%;
+    min-height: 100%;
+    padding: 5px;
+    z-index: 10;
+}
+
+.edgar-right-overlap-menu {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    min-height: 100%;
+    padding: 5px;
+    z-index: 10;
+}
+
+.edgar-overlap {
+    position: relative;
+    min-height: 150px;
+}
+
+.edgar-overlap-btn-w {
+    min-width: 100px;
+}
+
+.chosen-container-multi .chosen-choices .search-field input[type='text'] {
+    height: 2.25rem !important;
+}
+
+/* table.edgar td.edgar-code {
+  font-family: "Lucida Console", Monaco, monospace;
+  padding: 1px;
+} */
+
+table.edgar2 {
+    width: 100%;
+}
+
+table.edgar2 th {
+    vertical-align: top;
+    padding: 4px 10px;
+    border: 1px solid #bbb;
+    background-color: deepskyblue;
+}
+
+table.edgar2 td.edgar-code {
+    font-family: IosevkaSlabWEB, 'Lucida Console', Monaco, monospace;
+    padding: 1px;
+    white-space: pre;
+}
+
+table.code-results {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table.code-results td:first-child {
+    width: 6em;
+}
+
+.runAllC:hover {
+    background-color: rgb(242, 96, 96);
+    border-color: rgb(242, 96, 96);
+}
+
+/*enterLectureView css*/
+
+/*#enterLecture {*/
+
+/*display: flex;*/
+
+/*}*/
+
+#edgarImg {
+    height: 13.4vw;
+    width: 7.8vw;
+}

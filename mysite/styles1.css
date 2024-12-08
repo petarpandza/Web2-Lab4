@@ -1,0 +1,387 @@
+
+/*
+#enterLectureForm {
+  margin: auto;
+  margin-top: 1.5vw;
+}
+
+#enterLectureForm>#roomName>input[type=text] {
+  padding-left: 0.37vw;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.5vw;
+  height: fit-content;
+}
+
+#enterLectureForm>.buttons>#loginButton, #anonymousButton {
+  cursor: pointer;
+  font-size: 1.5vw;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5vw 1.1vw;
+}
+
+#enterLectureForm>.buttons>#loginButton {
+  margin-top: 0.75vw;
+  background-color: #4CAF50;
+  color: white;
+}
+
+#enterLectureForm>.buttons>#anonymousButton {
+  margin-top: 0.75vw;
+  background-color: #2b3cd1;
+  color: white;
+}
+
+#enterLectureForm>.buttons>#loginButton:hover {
+  background-color: #499249;
+}
+
+#enterLectureForm>.buttons>#anonymousButton:hover {
+  background-color: #2936a2;
+} */
+
+/*newLectureQuizView css*/
+
+#newLectureForm {
+    margin: auto;
+    margin-top: 1.5vw;
+}
+
+#newLectureForm>legend {
+    font-size: 4vw;
+}
+
+#newLectureForm>#lecturePassword {
+    margin-bottom: 2.3vw;
+    margin-top: 2.3vw;
+    font-size: 1.6vw;
+}
+
+#newLectureForm>#lecturePassword>label {
+    font-weight: normal;
+}
+
+#newLectureForm>#lecturePassword>input[type='text'] {
+    padding: 0.4vw;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.5vw;
+    height: fit-content;
+}
+
+#newLectureForm>#roomName {
+    margin-bottom: 2.3vw;
+    font-size: 1.6vw;
+}
+
+#newLectureForm>#roomName>label {
+    font-weight: normal;
+}
+
+#newLectureForm>#roomName>input[type='text'] {
+    padding: 0.4vw;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.5vw;
+    height: fit-content;
+}
+
+#newLectureForm>#allowAnonymous {
+    margin-bottom: 1.5vw;
+    font-size: 1.6vw;
+}
+
+#newLectureForm>#allowAnonymous>label {
+    font-weight: normal;
+}
+
+#newLectureForm>#start_button>#startLectureButton {
+    font-size: 1.6vw;
+}
+
+.remove_button_css {
+    outline: none;
+    padding: 5px;
+    border: 0px;
+    box-sizing: none;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.remove_button_css:focus,
+.remove_button_css:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+div.enhance-md-collapse {
+    border: 1px dashed green;
+    padding: 50px 5px 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.remove-attachment {
+    cursor: pointer;
+}
+
+.fas.fa-info-circle:hover {
+    cursor: pointer;
+}
+
+.publicatt {
+    color: #2faa28;
+}
+
+.privateatt {
+    color: #f20023;
+}
+
+.valid-border {
+    outline: none;
+    border-color: #5cb85c;
+    box-shadow: 0 0 10px #5cb85c;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.invalid-border {
+    outline: none;
+    border-color: #ed0001;
+    box-shadow: 0 0 10px #ed0001;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.filemanager {
+    position: relative;
+    width: 100%;
+}
+
+.filemanager ::-webkit-input-placeholder {
+    color: #4d535e;
+}
+
+.filemanager :-moz-placeholder {
+    color: #4d535e;
+    opacity: 1;
+}
+
+.filemanager ::-moz-placeholder {
+    color: #4d535e;
+    opacity: 1;
+}
+
+.filemanager :-ms-input-placeholder {
+    color: #4d535e;
+}
+
+.filemanager .resultitem {
+    padding-bottom: 10px;
+    border: 2px solid #fff;
+}
+
+.filemanager .data div.icon-pos {
+    display: table-cell;
+    padding: 0 10px 0 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.filemanager .data div div.details {
+    width: 100%;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 10px;
+    margin-bottom: 2px;
+    list-style-type: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 0;
+    -webkit-transition: 0.3s background-color;
+    -o-transition: 0.3s background-color;
+    transition: 0.3s background-color;
+}
+
+.filemanager .data div .name {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5em;
+    color: #333;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.filemanager .data div span.details {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.filemanager .file-icon {
+    display: table-row;
+    margin: 0 0 0 0 !important;
+    font-size: 2em;
+}
+
+label.form-check-label {
+    word-wrap: normal;
+}
+
+/* Angular app shared styles: */
+
+.edgar-test-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+.edgar-header-bg {
+    height: 140px;
+}
+
+.popover {
+    max-width: 500px !important;
+}
+
+.card.full-height {
+    height: calc(100% - 30px);
+}
+
+.question-preview__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(200, 200, 200, 0.5);
+    z-index: 999;
+    text-align: center;
+    font-size: 3rem;
+    color: red;
+    margin-left: -21px;
+    margin-top: -21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li.nav-item .nav-link.active {
+    background-color: beige;
+}
+
+#img-spae {
+    width: 300px;
+    opacity: 0;
+}
+
+#img-spae:hover {
+    animation: 3s forwards fadein;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0.1;
+    }
+}
+
+div.toggle-group label {
+    word-wrap: normal;
+}
+
+div.floating-toolbar-right {
+    position: fixed;
+    right: 0px;
+    background-color: aliceblue;
+    border: 1px solid blue;
+    padding: 10px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    opacity: 80%;
+}
+
+.mg-file-label {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+}
+
+div.mg-file {
+    position: relative;
+}
+
+a.uploaded-files {
+    width: 100%;
+}
+
+pre {
+    font-variant-ligatures: none;
+}
+
+button.btn-copy-to-clipobard {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+pre del {
+    background: #ffc107;
+}
+
+pre ins {
+    background: #8fff8f;
+}
+
+.checkbox-1x {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+}
+
+.checkbox-2x {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+div.mermaid-centered svg {
+    margin: auto;
+    display: block;
+}
+
+#tinyimage-tooltip {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border: 1px solid rgb(68, 68, 68);
+    border-radius: 5px;
+    box-shadow: black 1px 1px 3px;
+    overflow: hidden;
+    opacity: 1;
+    z-index: 1;
+    display: none;
+}
